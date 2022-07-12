@@ -17,15 +17,25 @@ public class PessoaModel {
     private Long pessoaId;
 
     private String nome;
-
-    @DateTimeFormat(pattern = "dd/MM/yyyy")
-    private LocalDate dataNascimento;
+    private String dataNascimento;
 
     //RELAÇÃO DE TABELAS
 
     @OneToMany(mappedBy = "pessoa", cascade = CascadeType.ALL)
     @JsonIgnoreProperties("pessoa")
     private List<EnderecoModel> endereco;
+
+    //CONTRUTOR
+
+
+    public PessoaModel() {
+    }
+
+    public PessoaModel(Long pessoaId, String nome, String dataNascimento) {
+        this.pessoaId = pessoaId;
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+    }
 
     public Long getPessoaId() {
         return pessoaId;
@@ -43,11 +53,11 @@ public class PessoaModel {
         this.nome = nome;
     }
 
-    public LocalDate getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(LocalDate dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 

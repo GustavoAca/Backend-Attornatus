@@ -28,6 +28,21 @@ public class EnderecoModel {
     @JsonIgnoreProperties("endereco")
     private PessoaModel pessoa;
 
+    //CONSTRUTOR
+
+    public EnderecoModel() {
+    }
+
+    public EnderecoModel(Long enderecoId, String logradouro, String cep, String numero, String cidade, boolean endPrincipal) {
+        this.enderecoId = enderecoId;
+        this.logradouro = logradouro;
+        this.cep = cep;
+        this.numero = numero;
+        this.cidade = cidade;
+        this.endPrincipal = endPrincipal;
+    }
+
+
     //GET E SET
 
 
