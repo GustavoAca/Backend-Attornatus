@@ -1,15 +1,16 @@
 package com.gerenciarpessoas.gerenciamentopessoas.service;
 
+import java.nio.charset.Charset;
+import java.util.Optional;
+
 import com.gerenciarpessoas.gerenciamentopessoas.model.UsuarioLogin;
 import com.gerenciarpessoas.gerenciamentopessoas.model.UsuarioModel;
 import com.gerenciarpessoas.gerenciamentopessoas.repository.UsuarioRepository;
-import org.apache.tomcat.util.codec.binary.Base64;
+import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.stereotype.Service;
 
-import java.nio.charset.Charset;
-import java.util.Optional;
+import org.springframework.stereotype.Service;
 
 @Service
 public class UsuarioService {
