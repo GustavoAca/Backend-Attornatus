@@ -1,16 +1,14 @@
 package com.gerenciarpessoas.gerenciamentopessoas.repository;
 
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import com.gerenciarpessoas.gerenciamentopessoas.model.PessoaModel;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
+
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
