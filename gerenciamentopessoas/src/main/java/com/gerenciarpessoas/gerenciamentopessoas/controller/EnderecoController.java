@@ -1,7 +1,6 @@
 package com.gerenciarpessoas.gerenciamentopessoas.controller;
 
 import com.gerenciarpessoas.gerenciamentopessoas.model.EnderecoModel;
-import com.gerenciarpessoas.gerenciamentopessoas.model.PessoaModel;
 import com.gerenciarpessoas.gerenciamentopessoas.repository.EnderecoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
